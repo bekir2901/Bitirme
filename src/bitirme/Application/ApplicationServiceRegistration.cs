@@ -1,4 +1,4 @@
-﻿using System.Reflection;
+using System.Reflection;
 using Application.Services.AuthenticatorService;
 using Application.Services.AuthService;
 using Application.Services.UsersService;
@@ -20,6 +20,12 @@ using NArchitecture.Core.Mailing;
 using NArchitecture.Core.Mailing.MailKit;
 using NArchitecture.Core.Security.DependencyInjection;
 using NArchitecture.Core.Security.JWT;
+using Application.Services.Students;
+using Application.Services.Lecturers;
+using Application.Services.Messages;
+using Application.Services.FirstInternships;
+using Application.Services.Notifications;
+using Application.Services.SecondInternships;
 
 namespace Application;
 
@@ -61,6 +67,25 @@ public static class ApplicationServiceRegistration
 
         services.AddSecurityServices<Guid, int, Guid>(tokenOptions);
 
+        services.AddScoped<IStudentService, StudentManager>();
+        services.AddScoped<ILecturerService, LecturerManager>();
+        services.AddScoped<ILecturerService, LecturerManager>();
+        services.AddScoped<IMessageService, MessageManager>();
+        services.AddScoped<IFirstInternshipService, FirstInternshipManager>();
+        services.AddScoped<ILecturerService, LecturerManager>();
+        services.AddScoped<IMessageService, MessageManager>();
+        services.AddScoped<INotificationService, NotificationManager>();
+        services.AddScoped<ISecondInternshipService, SecondInternshipManager>();
+        services.AddScoped<IStudentService, StudentManager>();
+        services.AddScoped<IFirstInternshipService, FirstInternshipManager>();
+        services.AddScoped<ISecondInternshipService, SecondInternshipManager>();
+        services.AddScoped<IStudentService, StudentManager>();
+        services.AddScoped<IStudentService, StudentManager>();
+        services.AddScoped<IStudentService, StudentManager>();
+        services.AddScoped<IMessageService, MessageManager>();
+        services.AddScoped<IMessageService, MessageManager>();
+        services.AddScoped<IMessageService, MessageManager>();
+        services.AddScoped<INotificationService, NotificationManager>();
         return services;
     }
 

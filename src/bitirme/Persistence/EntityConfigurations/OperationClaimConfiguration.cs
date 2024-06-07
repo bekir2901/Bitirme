@@ -6,6 +6,12 @@ using Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using NArchitecture.Core.Security.Constants;
+using Application.Features.Students.Constants;
+using Application.Features.Lecturers.Constants;
+using Application.Features.Messages.Constants;
+using Application.Features.FirstInternships.Constants;
+using Application.Features.Notifications.Constants;
+using Application.Features.SecondInternships.Constants;
 
 namespace Persistence.EntityConfigurations;
 
@@ -97,6 +103,273 @@ public class OperationClaimConfiguration : IEntityTypeConfiguration<OperationCla
         );
         #endregion
 
+        
+        #region Students CRUD
+        featureOperationClaims.AddRange(
+            [
+                new() { Id = ++lastId, Name = StudentsOperationClaims.Admin },
+                new() { Id = ++lastId, Name = StudentsOperationClaims.Read },
+                new() { Id = ++lastId, Name = StudentsOperationClaims.Write },
+                new() { Id = ++lastId, Name = StudentsOperationClaims.Create },
+                new() { Id = ++lastId, Name = StudentsOperationClaims.Update },
+                new() { Id = ++lastId, Name = StudentsOperationClaims.Delete },
+            ]
+        );
+        #endregion
+        
+        
+        #region Lecturers CRUD
+        featureOperationClaims.AddRange(
+            [
+                new() { Id = ++lastId, Name = LecturersOperationClaims.Admin },
+                new() { Id = ++lastId, Name = LecturersOperationClaims.Read },
+                new() { Id = ++lastId, Name = LecturersOperationClaims.Write },
+                new() { Id = ++lastId, Name = LecturersOperationClaims.Create },
+                new() { Id = ++lastId, Name = LecturersOperationClaims.Update },
+                new() { Id = ++lastId, Name = LecturersOperationClaims.Delete },
+            ]
+        );
+        #endregion
+        
+        
+        #region Lecturers CRUD
+        featureOperationClaims.AddRange(
+            [
+                new() { Id = ++lastId, Name = LecturersOperationClaims.Admin },
+                new() { Id = ++lastId, Name = LecturersOperationClaims.Read },
+                new() { Id = ++lastId, Name = LecturersOperationClaims.Write },
+                new() { Id = ++lastId, Name = LecturersOperationClaims.Create },
+                new() { Id = ++lastId, Name = LecturersOperationClaims.Update },
+                new() { Id = ++lastId, Name = LecturersOperationClaims.Delete },
+            ]
+        );
+        #endregion
+        
+        
+        
+        #region Messages CRUD
+        featureOperationClaims.AddRange(
+            [
+                new() { Id = ++lastId, Name = MessagesOperationClaims.Admin },
+                new() { Id = ++lastId, Name = MessagesOperationClaims.Read },
+                new() { Id = ++lastId, Name = MessagesOperationClaims.Write },
+                new() { Id = ++lastId, Name = MessagesOperationClaims.Create },
+                new() { Id = ++lastId, Name = MessagesOperationClaims.Update },
+                new() { Id = ++lastId, Name = MessagesOperationClaims.Delete },
+            ]
+        );
+        #endregion
+        
+        
+        #region FirstInternships CRUD
+        featureOperationClaims.AddRange(
+            [
+                new() { Id = ++lastId, Name = FirstInternshipsOperationClaims.Admin },
+                new() { Id = ++lastId, Name = FirstInternshipsOperationClaims.Read },
+                new() { Id = ++lastId, Name = FirstInternshipsOperationClaims.Write },
+                new() { Id = ++lastId, Name = FirstInternshipsOperationClaims.Create },
+                new() { Id = ++lastId, Name = FirstInternshipsOperationClaims.Update },
+                new() { Id = ++lastId, Name = FirstInternshipsOperationClaims.Delete },
+            ]
+        );
+        #endregion
+        
+        
+        #region Lecturers CRUD
+        featureOperationClaims.AddRange(
+            [
+                new() { Id = ++lastId, Name = LecturersOperationClaims.Admin },
+                new() { Id = ++lastId, Name = LecturersOperationClaims.Read },
+                new() { Id = ++lastId, Name = LecturersOperationClaims.Write },
+                new() { Id = ++lastId, Name = LecturersOperationClaims.Create },
+                new() { Id = ++lastId, Name = LecturersOperationClaims.Update },
+                new() { Id = ++lastId, Name = LecturersOperationClaims.Delete },
+            ]
+        );
+        #endregion
+        
+        
+        #region Messages CRUD
+        featureOperationClaims.AddRange(
+            [
+                new() { Id = ++lastId, Name = MessagesOperationClaims.Admin },
+                new() { Id = ++lastId, Name = MessagesOperationClaims.Read },
+                new() { Id = ++lastId, Name = MessagesOperationClaims.Write },
+                new() { Id = ++lastId, Name = MessagesOperationClaims.Create },
+                new() { Id = ++lastId, Name = MessagesOperationClaims.Update },
+                new() { Id = ++lastId, Name = MessagesOperationClaims.Delete },
+            ]
+        );
+        #endregion
+        
+        
+        #region Notifications CRUD
+        featureOperationClaims.AddRange(
+            [
+                new() { Id = ++lastId, Name = NotificationsOperationClaims.Admin },
+                new() { Id = ++lastId, Name = NotificationsOperationClaims.Read },
+                new() { Id = ++lastId, Name = NotificationsOperationClaims.Write },
+                new() { Id = ++lastId, Name = NotificationsOperationClaims.Create },
+                new() { Id = ++lastId, Name = NotificationsOperationClaims.Update },
+                new() { Id = ++lastId, Name = NotificationsOperationClaims.Delete },
+            ]
+        );
+        #endregion
+        
+        
+        #region SecondInternships CRUD
+        featureOperationClaims.AddRange(
+            [
+                new() { Id = ++lastId, Name = SecondInternshipsOperationClaims.Admin },
+                new() { Id = ++lastId, Name = SecondInternshipsOperationClaims.Read },
+                new() { Id = ++lastId, Name = SecondInternshipsOperationClaims.Write },
+                new() { Id = ++lastId, Name = SecondInternshipsOperationClaims.Create },
+                new() { Id = ++lastId, Name = SecondInternshipsOperationClaims.Update },
+                new() { Id = ++lastId, Name = SecondInternshipsOperationClaims.Delete },
+            ]
+        );
+        #endregion
+        
+        
+        #region Students CRUD
+        featureOperationClaims.AddRange(
+            [
+                new() { Id = ++lastId, Name = StudentsOperationClaims.Admin },
+                new() { Id = ++lastId, Name = StudentsOperationClaims.Read },
+                new() { Id = ++lastId, Name = StudentsOperationClaims.Write },
+                new() { Id = ++lastId, Name = StudentsOperationClaims.Create },
+                new() { Id = ++lastId, Name = StudentsOperationClaims.Update },
+                new() { Id = ++lastId, Name = StudentsOperationClaims.Delete },
+            ]
+        );
+        #endregion
+        
+        
+        #region FirstInternships CRUD
+        featureOperationClaims.AddRange(
+            [
+                new() { Id = ++lastId, Name = FirstInternshipsOperationClaims.Admin },
+                new() { Id = ++lastId, Name = FirstInternshipsOperationClaims.Read },
+                new() { Id = ++lastId, Name = FirstInternshipsOperationClaims.Write },
+                new() { Id = ++lastId, Name = FirstInternshipsOperationClaims.Create },
+                new() { Id = ++lastId, Name = FirstInternshipsOperationClaims.Update },
+                new() { Id = ++lastId, Name = FirstInternshipsOperationClaims.Delete },
+            ]
+        );
+        #endregion
+        
+        
+        #region SecondInternships CRUD
+        featureOperationClaims.AddRange(
+            [
+                new() { Id = ++lastId, Name = SecondInternshipsOperationClaims.Admin },
+                new() { Id = ++lastId, Name = SecondInternshipsOperationClaims.Read },
+                new() { Id = ++lastId, Name = SecondInternshipsOperationClaims.Write },
+                new() { Id = ++lastId, Name = SecondInternshipsOperationClaims.Create },
+                new() { Id = ++lastId, Name = SecondInternshipsOperationClaims.Update },
+                new() { Id = ++lastId, Name = SecondInternshipsOperationClaims.Delete },
+            ]
+        );
+        #endregion
+        
+        
+        #region Students CRUD
+        featureOperationClaims.AddRange(
+            [
+                new() { Id = ++lastId, Name = StudentsOperationClaims.Admin },
+                new() { Id = ++lastId, Name = StudentsOperationClaims.Read },
+                new() { Id = ++lastId, Name = StudentsOperationClaims.Write },
+                new() { Id = ++lastId, Name = StudentsOperationClaims.Create },
+                new() { Id = ++lastId, Name = StudentsOperationClaims.Update },
+                new() { Id = ++lastId, Name = StudentsOperationClaims.Delete },
+            ]
+        );
+        #endregion
+        
+        
+        #region Students CRUD
+        featureOperationClaims.AddRange(
+            [
+                new() { Id = ++lastId, Name = StudentsOperationClaims.Admin },
+                new() { Id = ++lastId, Name = StudentsOperationClaims.Read },
+                new() { Id = ++lastId, Name = StudentsOperationClaims.Write },
+                new() { Id = ++lastId, Name = StudentsOperationClaims.Create },
+                new() { Id = ++lastId, Name = StudentsOperationClaims.Update },
+                new() { Id = ++lastId, Name = StudentsOperationClaims.Delete },
+            ]
+        );
+        #endregion
+        
+        
+        #region Students CRUD
+        featureOperationClaims.AddRange(
+            [
+                new() { Id = ++lastId, Name = StudentsOperationClaims.Admin },
+                new() { Id = ++lastId, Name = StudentsOperationClaims.Read },
+                new() { Id = ++lastId, Name = StudentsOperationClaims.Write },
+                new() { Id = ++lastId, Name = StudentsOperationClaims.Create },
+                new() { Id = ++lastId, Name = StudentsOperationClaims.Update },
+                new() { Id = ++lastId, Name = StudentsOperationClaims.Delete },
+            ]
+        );
+        #endregion
+        
+        
+        #region Messages CRUD
+        featureOperationClaims.AddRange(
+            [
+                new() { Id = ++lastId, Name = MessagesOperationClaims.Admin },
+                new() { Id = ++lastId, Name = MessagesOperationClaims.Read },
+                new() { Id = ++lastId, Name = MessagesOperationClaims.Write },
+                new() { Id = ++lastId, Name = MessagesOperationClaims.Create },
+                new() { Id = ++lastId, Name = MessagesOperationClaims.Update },
+                new() { Id = ++lastId, Name = MessagesOperationClaims.Delete },
+            ]
+        );
+        #endregion
+        
+        
+        #region Messages CRUD
+        featureOperationClaims.AddRange(
+            [
+                new() { Id = ++lastId, Name = MessagesOperationClaims.Admin },
+                new() { Id = ++lastId, Name = MessagesOperationClaims.Read },
+                new() { Id = ++lastId, Name = MessagesOperationClaims.Write },
+                new() { Id = ++lastId, Name = MessagesOperationClaims.Create },
+                new() { Id = ++lastId, Name = MessagesOperationClaims.Update },
+                new() { Id = ++lastId, Name = MessagesOperationClaims.Delete },
+            ]
+        );
+        #endregion
+        
+        
+        #region Messages CRUD
+        featureOperationClaims.AddRange(
+            [
+                new() { Id = ++lastId, Name = MessagesOperationClaims.Admin },
+                new() { Id = ++lastId, Name = MessagesOperationClaims.Read },
+                new() { Id = ++lastId, Name = MessagesOperationClaims.Write },
+                new() { Id = ++lastId, Name = MessagesOperationClaims.Create },
+                new() { Id = ++lastId, Name = MessagesOperationClaims.Update },
+                new() { Id = ++lastId, Name = MessagesOperationClaims.Delete },
+            ]
+        );
+        #endregion
+        
+        
+        #region Notifications CRUD
+        featureOperationClaims.AddRange(
+            [
+                new() { Id = ++lastId, Name = NotificationsOperationClaims.Admin },
+                new() { Id = ++lastId, Name = NotificationsOperationClaims.Read },
+                new() { Id = ++lastId, Name = NotificationsOperationClaims.Write },
+                new() { Id = ++lastId, Name = NotificationsOperationClaims.Create },
+                new() { Id = ++lastId, Name = NotificationsOperationClaims.Update },
+                new() { Id = ++lastId, Name = NotificationsOperationClaims.Delete },
+            ]
+        );
+        #endregion
+        
         return featureOperationClaims;
     }
 #pragma warning restore S1854 // Unused assignments should be removed

@@ -38,7 +38,7 @@ public class UserConfiguration : IEntityTypeConfiguration<User>
         get
         {
             HashingHelper.CreatePasswordHash(
-                password: "Passw0rd!",
+                password: "Adddbeee3!",
                 passwordHash: out byte[] passwordHash,
                 passwordSalt: out byte[] passwordSalt
             );
@@ -46,7 +46,7 @@ public class UserConfiguration : IEntityTypeConfiguration<User>
                 new()
                 {
                     Id = AdminId,
-                    Email = "narch@kodlama.io",
+                    Email = "beeeAddd@gmail.com",
                     PasswordHash = passwordHash,
                     PasswordSalt = passwordSalt
                 };
